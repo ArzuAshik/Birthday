@@ -4,15 +4,18 @@
     --text: #000;
 }
 
+/*
 .hills{
     overflow: hidden;
 }
+*/
 
 body{
     padding: 0;
     margin: 0;
     height: 100vh;
     overflow: hidden;
+    font-family: 'Holtwood One SC', serif;
 }        
 .sky, .hills{
     height: 40vh;
@@ -24,14 +27,15 @@ body{
     background-color: #009500;
     position: absolute;
     bottom: 0;
-    z-index: 9999
+    z-index: 9999;
 
 }
+
+/*
 .hill{
     display: inline-block;
     position: absolute; 
 }
-
 .hill:first-of-type{
     width: 15px;
     border-bottom: 20vw solid green;
@@ -59,6 +63,7 @@ body{
     left: 50%;
     bottom: -15%;
 }
+*/
 
 .top{
     overflow: hidden;
@@ -67,11 +72,11 @@ body{
 }
 svg{
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     z-index: 99999;
 }
 .cloud{
-    background-color: #fff;
+    background-color: #fcfcfc;
     height: 50px;
     width: 200px;
     border-radius: 50px;
@@ -85,7 +90,7 @@ svg{
     position: absolute;
     height: 100px;
     width: 90px;
-    background-color: #fff;
+    background-color: #fcfcfc;
     border-radius: 50%;
     bottom: 10px;
     left: 80px;
@@ -96,7 +101,7 @@ svg{
     position: absolute;
     height: 90px;
     width: 100px;
-    background-color: #fff;
+    background-color: #fcfcfc;
     border-radius: 50%;
     bottom: 10px;
     left: 15px;
@@ -184,7 +189,13 @@ svg{
     width: 90px;
     position: absolute;
     top: 95%;
-    left: 52px
+    left: 52px;
+    -webkit-box-shadow: 0px 0px 5px 0px var(--light) inset;
+    box-shadow: 0px 0px 5px 0px var(--light) inset;
+    z-index: 2;
+    text-align: center;
+    font-size: .8em;
+    color: var(--light);
 }
 .basket{
     position: absolute;
@@ -196,6 +207,8 @@ svg{
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     color: var(--text);
+    -webkit-box-shadow: 0px 0px 5px 0px var(--light) inset;
+    box-shadow: 0px 0px 5px 0px var(--light) inset;
 }
 .basket:before{
     position: absolute;
@@ -206,6 +219,10 @@ svg{
     left: -12%;
     top: -10px;
     border-radius: 5px;
+}
+
+.basket img{
+    height: 100%;
 }
 
 .rope{
@@ -246,125 +263,151 @@ svg{
     padding: 5px;
     font-size: 2em;
 }
+
 /*        Happy*/
 .balloon:first-child{
-    --dark: #F79F1F;
-    --light: #FFC312;
-    --text: #00baff;
+    --dark: #f21818;
+    --light: #ffafaf;
+    --text: #8d6bff;
     left: 10%;
-    -webkit-animation: happy 20s linear infinite;
-    animation: happy 20s linear infinite;
+    -webkit-animation: happy 25s linear infinite;
+    animation: happy 25s linear infinite;
 }
 
 .balloon:nth-child(2){
-    --dark: #1289A7;
-    --light: #12CBC4;
-    --text: #00baff;
+    --dark: #16a085;
+    --light: #1abc9c;
+    --text: #c4ff00;
     left: 25%;
-    -webkit-animation: happy 20s linear .2s infinite;
-    animation: happy 20s linear .2s infinite;
+    -webkit-animation: happy 25s linear .2s infinite;
+    animation: happy 25s linear .2s infinite;
 }
 .balloon:nth-child(3){
-    --dark: #B53471;
-    --light: #ED4C67;
+    --dark: #9C1ECB;
+    --light: #FE00F1;
+    --text: #66e622;
     left: 40%;
-    -webkit-animation: happy 20s linear .3s infinite;
-    animation: happy 20s linear .3s infinite;
+    -webkit-animation: happy 25s linear .3s infinite;
+    animation: happy 25s linear .3s infinite;
 }
 .balloon:nth-child(4){
-    --dark: #A3CB38;
-    --light: #C4E538;
+    --dark: #40C415;
+    --light: #c0e500;
+    --text: #d03636;
     left: 55%;
-    -webkit-animation: happy 20s linear .2s infinite;
-    animation: happy 20s linear .2s infinite;
+    -webkit-animation: happy 25s linear .2s infinite;
+    animation: happy 25s linear .2s infinite;
 }
 .balloon:nth-child(5){
-    --dark: #5758BB;
-    --light: #9980FA;
+    --dark: #31AEFE;
+    --light: #93FFF4;
+    --text: #00ff89;
     left: 70%;
-    -webkit-animation: happy 20s linear infinite;
-    animation: happy 20s linear infinite;
+    -webkit-animation: happy 25s linear infinite;
+    animation: happy 25s linear infinite;
 }
 /*        Birth*/
 .balloon:nth-child(6){
-    --dark: #6F1E51;
-    --light: #833471;
+    --dark: #9C1ECB;
+    --light: #FE00F1;
+    --text: #66e622;
     left: 12%;
-    -webkit-animation: happy 20s linear 5s infinite;
-    animation: happy 20s linear 5s infinite;
+    -webkit-animation: happy 25s linear 5s infinite;
+    animation: happy 25s linear 5s infinite;
 }
 .balloon:nth-child(7){
-    --dark: #EE5A24;
-    --light: #F79F1F;
+    --dark: #f21818;
+    --light: #ffafaf;
+    --text: #8d6bff;
     left: 27%;
-    -webkit-animation: happy 20s linear 5.2s infinite;
-    animation: happy 20s linear 5.2s infinite;
+    -webkit-animation: happy 25s linear 5.2s infinite;
+    animation: happy 25s linear 5.2s infinite;
 }
 .balloon:nth-child(8){
-    --dark: #1289A7;
-    --light: #12CBC4;
+    --dark: #40C415;
+    --light: #c0e500;
+    --text: #d03636;
     left: 42%;
-    -webkit-animation: happy 20s linear 5s infinite;
-    animation: happy 20s linear 5s infinite;
+    -webkit-animation: happy 25s linear 5s infinite;
+    animation: happy 25s linear 5s infinite;
 }
 .balloon:nth-child(9){
-    --dark: #F79F1F;
-    --light: #FFC312;
+    --dark: #31AEFE;
+    --light: #93FFF4;
+    --text: #00ff89;
+    
     left: 57%;
-    -webkit-animation: happy 20s linear 5.2s infinite;
-    animation: happy 20s linear 5.2s infinite;
+    -webkit-animation: happy 25s linear 5.2s infinite;
+    animation: happy 25s linear 5.2s infinite;
 }
 .balloon:nth-child(10){
-    --dark: #009432;
-    --light: #A3CB38;
+    --dark: #16a085;
+    --light: #1abc9c;
+    --text: #c4ff00;
     left: 72%;
-    -webkit-animation: happy 20s linear 5s infinite;
-    animation: happy 20s linear 5s infinite;D980FA
+    -webkit-animation: happy 25s linear 5s infinite;
+    animation: happy 25s linear 5s infinite;
 }
 /*        Day*/
+
 .balloon:nth-child(11){
-    --dark: #D980FA;
-    --light: #FDA7DF;
+    --dark: #31AEFE;
+    --light: #93FFF4;
+    --text: #00ff89;
     left: 25%;
-    -webkit-animation: happy 20s linear 10s infinite;
-    animation: happy 20s linear 10s infinite;
+    -webkit-animation: happy 25s linear 10s infinite;
+    animation: happy 25s linear 10s infinite;
 }
+
 .balloon:nth-child(12){
-    --dark: #1B1464;
-    --light: #006266;
-    color: #fff;
+    --dark: #40C415;
+    --light: #c0e500;
+    --text: #d03636;
     left: 40%;
-    -webkit-animation: happy 20s linear 10.2s infinite;
-    animation: happy 20s linear 10.2s infinite;
+    -webkit-animation: happy 25s linear 10.2s infinite;
+    animation: happy 25s linear 10.2s infinite;
 }
 .balloon:nth-child(13){
-    --dark: #5758BB;
-    --light: #9980FA;
+    --dark: #16a085;
+    --light: #1abc9c;
+    --text: #c4ff00;
     left: 55%;
-    -webkit-animation: happy 20s linear 10s infinite;
-    animation: happy 20s linear 10s infinite;
+    -webkit-animation: happy 25s linear 10s infinite;
+    animation: happy 25s linear 10s infinite;
 }
 /*        Name*/
 .balloon:nth-child(14){
     --dark: #F79F1F;
     --light: #FFC312;
+    --text: #c4ff00;
     left: 27%;
-    -webkit-animation: happy 20s linear 15s infinite;
-    animation: happy 20s linear 15s infinite;
+    -webkit-animation: happy 25s linear 15s infinite;
+    animation: happy 25s linear 15s infinite;
 }
 .balloon:nth-child(15){
     --dark: #1289A7;
     --light: #12CBC4;
+    --text: #d03636;
     left: 42%;
-    -webkit-animation: happy 20s linear 15.2s infinite;
-    animation: happy 20s linear 15.2s infinite;
+    -webkit-animation: happy 25s linear 15.2s infinite;
+    animation: happy 25s linear 15.2s infinite;
 }
 .balloon:nth-child(16){
     --dark: #B53471;
     --light: #FDA7DF;
+    --text: #c4ff00;
     left: 57%;
-    -webkit-animation: happy 20s linear 15s infinite;
-    animation: happy 20s linear 15s infinite;
+    -webkit-animation: happy 25s linear 15s infinite;
+    animation: happy 25s linear 15s infinite;
+}
+/*Avatar*/
+.balloon:nth-child(17){
+    --dark: #B53471;
+    --light: #FDA7DF;
+    --text: #c4ff00;
+    left: 45%;
+    -webkit-animation: avatar 25s linear 20s infinite;
+    animation: avatar 25s linear 20s infinite;
 }
 
 /*        Animations*/
@@ -395,6 +438,41 @@ svg{
         top: -40%;
         -webkit-transform: scale(.3);
         transform: scale(.3);
+    }
+    100%{
+        top: -400%;
+        -webkit-transform: scale(.0);
+        transform: scale(.0);
+    }
+}
+/*Avatar Animation*/
+@-webkit-keyframes avatar{
+    0%{
+        top: 100%;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50%{
+        top: -40%;
+        -webkit-transform: scale(.3);
+        transform: scale(.3);
+    }
+    100%{
+        top: -400%;
+        -webkit-transform: scale(.0);
+        transform: scale(.0);
+    }
+}
+@keyframes avatar{
+    0%{
+        top: 100%;
+        -webkit-transform: scale(2);
+        transform: scale(2);
+    }
+    50%{
+        top: -40%;
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
     }
     100%{
         top: -400%;

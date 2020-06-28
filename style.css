@@ -32,40 +32,6 @@ body{
 
 }
 
-/*
-.hill{
-    display: inline-block;
-    position: absolute; 
-}
-.hill:first-of-type{
-    width: 15px;
-    border-bottom: 20vw solid green;
-    border-left: 30vw solid transparent;
-    border-right: 30vw solid transparent;            
-    -webkit-transform: scale(.8);            
-    transform: scale(.8);
-    left: -20%;
-    bottom: -15%;
-}
-.hill:nth-of-type(2){
-    width: 15px;
-    border-bottom: 20vw solid green;
-    border-left: 30vw solid transparent;
-    border-right: 30vw solid transparent;
-    left: 15%;
-}
-.hill:nth-of-type(3){
-    width: 15px;
-    border-bottom: 20vw solid green;
-    border-left: 30vw solid transparent;
-    border-right: 30vw solid transparent;
-    -webkit-transform: scale(.8);
-    transform: scale(.8);
-    left: 50%;
-    bottom: -15%;
-}
-*/
-
 .top{
     overflow: hidden;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 147, 255, 0.5)), to(rgba(0, 226, 255, 0.28)));

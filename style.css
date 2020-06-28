@@ -1,3 +1,9 @@
+:root {
+    --dark: #f21818;
+    --light: #ffafaf;
+    --text: #000;
+}
+
 .hills{
     overflow: hidden;
 }
@@ -143,10 +149,10 @@ svg{
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-color: #f21818;
+    background-color: var(--dark);
     position: absolute;
-    -webkit-box-shadow: 0px 0px 20px 0px #ffafaf inset;
-    box-shadow: 0px 0px 20px 0px #ffafaf inset;
+    -webkit-box-shadow: 0px 0px 20px 0px var(--light) inset;
+    box-shadow: 0px 0px 20px 0px var(--light) inset;
     -webkit-transform: scale(.7);
     transform: scale(.7);
     transform: scale(.7);
@@ -157,23 +163,23 @@ svg{
     height: 200px;
     width: 140px;
     border-radius: 50%;
-    background-color: #ffafaf;
+    background-color: var(--light);
     position: absolute;
     left: 30px;
-    -webkit-box-shadow: 0px 0px 2px 0px #f21818 inset;
-    box-shadow: 0px 0px 2px 0px #f21818 inset;
+    -webkit-box-shadow: 0px 0px 2px 0px var(--dark) inset;
+    box-shadow: 0px 0px 2px 0px var(--dark) inset;
 }
 .balloon:after{
     content: '';
     height: 200px;
     width: 80px;
     border-radius: 50%;
-    background-color: #f21818;
+    background-color: var(--dark);
     position: absolute;
     left: 60px;
 }
 .bottom{
-    background-color: #f21818;
+    background-color: var(--dark);
     height: 20px;
     width: 90px;
     position: absolute;
@@ -184,18 +190,19 @@ svg{
     position: absolute;
     height: 50px;
     width: 70px;
-    background-color: #f21818;
+    background-color: var(--dark);
     top: 260px;
     left: 62.5px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    color: var(--text);
 }
 .basket:before{
     position: absolute;
     content: '';
     height: 10px;
     width: 90px;
-    background-color: #ff0000;
+    background-color: var(--light);
     left: -12%;
     top: -10px;
     border-radius: 5px;
@@ -204,7 +211,7 @@ svg{
 .rope{
     height: 45px;
     width: 3px;
-    background-color: #f21818;
+    background-color: var(--dark);
     position: absolute;
     top: 205px;
     left: 95px;
@@ -213,7 +220,7 @@ svg{
     content: '';
     height: 45px;
     width: 3px;
-    background-color: #f21818;
+    background-color: var(--dark);
     position: absolute;
     top: 0;
     left: 40px;
@@ -224,7 +231,7 @@ svg{
     content: '';
     height: 45px;
     width: 3px;
-    background-color: #f21818;
+    background-color: var(--dark);
     position: absolute;
     top: 0;
     left: -40px;
@@ -241,85 +248,120 @@ svg{
 }
 /*        Happy*/
 .balloon:first-child{
+    --dark: #F79F1F;
+    --light: #FFC312;
+    --text: #00baff;
     left: 10%;
     -webkit-animation: happy 20s linear infinite;
     animation: happy 20s linear infinite;
 }
 
 .balloon:nth-child(2){
+    --dark: #1289A7;
+    --light: #12CBC4;
+    --text: #00baff;
     left: 25%;
     -webkit-animation: happy 20s linear .2s infinite;
     animation: happy 20s linear .2s infinite;
 }
 .balloon:nth-child(3){
+    --dark: #B53471;
+    --light: #ED4C67;
     left: 40%;
     -webkit-animation: happy 20s linear .3s infinite;
     animation: happy 20s linear .3s infinite;
 }
 .balloon:nth-child(4){
+    --dark: #A3CB38;
+    --light: #C4E538;
     left: 55%;
     -webkit-animation: happy 20s linear .2s infinite;
     animation: happy 20s linear .2s infinite;
 }
 .balloon:nth-child(5){
+    --dark: #5758BB;
+    --light: #9980FA;
     left: 70%;
     -webkit-animation: happy 20s linear infinite;
     animation: happy 20s linear infinite;
 }
 /*        Birth*/
 .balloon:nth-child(6){
+    --dark: #6F1E51;
+    --light: #833471;
     left: 12%;
     -webkit-animation: happy 20s linear 5s infinite;
     animation: happy 20s linear 5s infinite;
 }
 .balloon:nth-child(7){
+    --dark: #EE5A24;
+    --light: #F79F1F;
     left: 27%;
     -webkit-animation: happy 20s linear 5.2s infinite;
     animation: happy 20s linear 5.2s infinite;
 }
 .balloon:nth-child(8){
+    --dark: #1289A7;
+    --light: #12CBC4;
     left: 42%;
     -webkit-animation: happy 20s linear 5s infinite;
     animation: happy 20s linear 5s infinite;
 }
 .balloon:nth-child(9){
+    --dark: #F79F1F;
+    --light: #FFC312;
     left: 57%;
     -webkit-animation: happy 20s linear 5.2s infinite;
     animation: happy 20s linear 5.2s infinite;
 }
 .balloon:nth-child(10){
+    --dark: #009432;
+    --light: #A3CB38;
     left: 72%;
     -webkit-animation: happy 20s linear 5s infinite;
-    animation: happy 20s linear 5s infinite;
+    animation: happy 20s linear 5s infinite;D980FA
 }
 /*        Day*/
 .balloon:nth-child(11){
+    --dark: #D980FA;
+    --light: #FDA7DF;
     left: 25%;
     -webkit-animation: happy 20s linear 10s infinite;
     animation: happy 20s linear 10s infinite;
 }
 .balloon:nth-child(12){
+    --dark: #1B1464;
+    --light: #006266;
+    color: #fff;
     left: 40%;
     -webkit-animation: happy 20s linear 10.2s infinite;
     animation: happy 20s linear 10.2s infinite;
 }
 .balloon:nth-child(13){
+    --dark: #5758BB;
+    --light: #9980FA;
     left: 55%;
     -webkit-animation: happy 20s linear 10s infinite;
     animation: happy 20s linear 10s infinite;
 }
 /*        Name*/
 .balloon:nth-child(14){
+    --dark: #F79F1F;
+    --light: #FFC312;
     left: 27%;
     -webkit-animation: happy 20s linear 15s infinite;
     animation: happy 20s linear 15s infinite;
 }
 .balloon:nth-child(15){
+    --dark: #1289A7;
+    --light: #12CBC4;
     left: 42%;
     -webkit-animation: happy 20s linear 15.2s infinite;
     animation: happy 20s linear 15.2s infinite;
 }
 .balloon:nth-child(16){
+    --dark: #B53471;
+    --light: #FDA7DF;
     left: 57%;
     -webkit-animation: happy 20s linear 15s infinite;
     animation: happy 20s linear 15s infinite;

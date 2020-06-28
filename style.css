@@ -17,7 +17,8 @@ body{
     overflow: hidden;
     font-family: 'Holtwood One SC', serif;
 }        
-.sky, .hills{
+.sky,
+.hills{
     height: 40vh;
     position: relative;
 }
